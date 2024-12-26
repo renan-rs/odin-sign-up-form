@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+}
+h3 {
+    font-size: 1.6rem;
+}
+#container{
+    background-color: dodgerblue;
+    background: dodgerblue url(./imgs/peter-robbins-background.jpg) no-repeat right center;
+    background-size: auto;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#left-side{
+    border: 1px solid lightcoral;
+    flex: 1 2 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.logo-wrapper{
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 0;
+    text-align: center;
+    margin-top:40%;
+}
+.logo-wrapper img {
+    width: 60%;
+}
+#right-side{
+    background-color: rgb(243, 243, 243);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.5);
+    flex: 2 3 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+.title-wrapper,
+.form-wrapper{
+    padding: 0 40px;
+}
+.title-wrapper {
+    width: 100%;
+}
+.title-wrapper > p{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+.title-wrapper > p:first-child{
+    margin-top: 0;
+}
+
+.form-wrapper{
+    background-color: white;
+    padding: 20px 40px;
+    padding-bottom: 30px;
+}
+.form-wrapper > h3{
+    margin-bottom: 30px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    gap:20px;
+}
+.input-group{
+    flex-basis:100%;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+input{
+    padding: 8px;
+}
+
+@media (min-width: 1024px) {
+    .title-wrapper {
+        width: 60%;
+    }
+    form{
+        width: 70%;
+    }
+    .input-group{
+        flex-basis: 40%;
+    }
+}
+@media (min-width: 720px) {
+    .input-group{
+        flex-basis: 45%;
+    }
+}
