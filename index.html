@@ -12,22 +12,23 @@
             <div class="logo-wrapper">
                 <img src="./imgs/logo_placeholder.png" alt="Logo">
             </div>
+            <span>Photo by <a href="https://unsplash.com/@prphotography262?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Peter Robbins</a> on <a href="https://unsplash.com/photos/a-path-through-a-forest-with-lots-of-trees-CvP-KPrxQd4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
         </div>
         <div id="right-side">
             <div class="title-wrapper">
-                <p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-                <p>You know you want to.</p>
+                <p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form-wrapper">
                 <h3>Let's do this!</h3>
-                <form action="#">
+                <form id="my-form" action="#" method="get">
                     <div class="input-group">
                         <label for="first-name">first name</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" minlength="3" maxlength="15">
                     </div>
                     <div class="input-group">
                         <label for="last-name">last name</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" minlength="3" maxlength="50">
                     </div>
                     <div class="input-group">
                         <label for="email">email</label>
@@ -39,13 +40,18 @@
                     </div>
                     <div class="input-group">
                         <label for="password">password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required minlength="8">
                     </div>
                     <div class="input-group">
                         <label for="password-confirm">confirm password</label>
-                        <input type="password" name="password-confirm" id="password-confirm">
+                        <input type="password" name="password-confirm" id="password-confirm" required minlength="8">
                     </div>
+                    
                 </form>
+            </div>
+            <div class="login-wrapper">
+                <input type="submit" form="my-form" value="Create Account">
+                <p>Already have an account? <a href="#" rel="noopener noreferrer">Log in</a></p>
             </div>
         </div>
     </div>
