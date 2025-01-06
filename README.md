@@ -2,6 +2,11 @@
 
 ## Project Sign-up Form
 
+### PREVIEW
+[https://renan-rs.github.io/odin-sign-up-form/](https://renan-rs.github.io/odin-sign-up-form/)
+
+---
+
 ### Step 1: Set up and planning
 1. Set up your git repository (refer to past projects if you need a refresher).
 2. Set up your HTML and CSS files with some dummy content, just to make sure you have everything linked correctly.
